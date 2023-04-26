@@ -3,7 +3,7 @@ PROJECT_ID="dtc-spotifyandyoutube"
 GCP_BUCKET="block-finalproject"
 GCP_CREDENTIALS="credentials-finalproject"
 GCP_TABLE="sandy_staging"
-GOOGLE_APPLICATION_CREDENTIALS="..."
+GOOGLE_APPLICATION_CREDENTIALS=".json"
 
 for i in 	KAGGLE_CONFIG_DIR \
 			PROJECT_ID \

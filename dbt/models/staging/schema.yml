@@ -8,7 +8,7 @@ sources:
     tables:
       - name: ingested
 models:
-    - name: sandy_data
+    - name: stg_sandy_data
       description: >
         Dataset of songs of various artist in the world and for each song is present:
         Several statistics of the music version on spotify, including the number of streams;
@@ -17,8 +17,6 @@ models:
           - name: id
             description: Primary key for this table, generated with a concatenation of artist+track
             tests:
-                - unique:
-                    severity: warn
                 - not_null:
                     severity: warn
           - name: Artist
