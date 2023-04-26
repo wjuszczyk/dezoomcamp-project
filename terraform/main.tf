@@ -47,9 +47,3 @@ resource "google_bigquery_dataset" "dwh-staging" {
   project    = var.project
   location   = var.region
 }
-
-resource "google_bigquery_dataset" "dwh-prod" {
-  dataset_id = var.bq_dataset_prod
-  project    = var.project
-  location   = var.region
-}

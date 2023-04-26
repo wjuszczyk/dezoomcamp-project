@@ -26,9 +26,3 @@ variable "bq_dataset_staging" {
   default = "sandy_staging"
   type = string
 }
-
-variable "bq_dataset_prod" {
-  description = "BigQuery Dataset for final production"
-  default = "sandy_prod"
-  type = string
-}
