@@ -1,17 +1,13 @@
 """
-# $ pip install kaggle
-# go to https://www.kaggle.com/settings/account
-# API -> Create New Token
-# mv kaggle.json to project dir
-# $ export KAGGLE_CONFIG_DIR=.
+Pipeline from web data to GCS
 """
 import os
 from datetime import timedelta
 from pathlib import Path
 import pandas as pd
-from prefect import flow, task
-from prefect_gcp.cloud_storage import GcsBucket
 from kaggle.api.kaggle_api_extended import KaggleApi
+from prefect_gcp.cloud_storage import GcsBucket
+from prefect import flow, task
 
 BASE_DIR = '.'
 DATASET_NAME = 'spotify-and-youtube'
@@ -22,8 +18,7 @@ def fetch() -> None:
     # go to https://www.kaggle.com/settings/account
     # API -> Create New Token
     # mv kaggle.json to project dir
-    # $ export KAGGLE_CONFIG_DIR=.
-    """
+     """
     api = KaggleApi()
     api.authenticate()
     api.dataset_download_files(
@@ -60,7 +55,7 @@ def write_gcs(path: Path) -> None:
     # (fix Windows double backslashes to slashes)
     path = Path(path).as_posix()
     opath = path.split("/")[1]
-    gcp_cloud_storage_bucket_block = GcsBucket.load("block-finalproject")
+    gcp_cloud_storage_bucket_block = GcsBucket.load(os.environ['GCP_BUCKET'])
     gcp_cloud_storage_bucket_block.upload_from_path(
         from_path=f"{path}",
         to_path=f"{opath}"

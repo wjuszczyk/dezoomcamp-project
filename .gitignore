@@ -1,9 +1,8 @@
-*.json
 /.ipynb_checkpoints
 /data
 /dbt/logs
 /terraform/.terraform*
 /terraform/terraform.tfstate*
-/*.json
-/*.parquet
-/*.ipynb
+*.json
+*.parquet
+*.ipynb
