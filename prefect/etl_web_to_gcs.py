@@ -27,15 +27,11 @@ def fetch() -> None:
 
 @task(name="Data transform", log_prints=True)
 def transform() -> pd.DataFrame:
-    """Drop not required columns, missing values, duplicates. Correct dtupes, add dur_min column."""
+    """Change duration to minutes from miliseconds, remove miliseconds column."""
     data_frame = pd.read_csv(BASE_DIR+"/"+DATASET_NAME+".zip")
     dfc = data_frame.copy()
-    dfc.drop(['Unnamed: 0','Url_spotify','Uri','Url_youtube','Description','Key'], axis=1, inplace=True)
-    dfc.dropna(inplace=True)
-    dfc=dfc.drop_duplicates(subset='Track')
-    for column in ['Views', 'Likes', 'Comments']:
-        dfc[column] = dfc[column].astype('int64')
     dfc['dur_min']=(dfc['Duration_ms']/1000)/60
+    #dfc.drop(['Duration_ms'], axis=1, inplace=True)
     return dfc
 
 @task(name="Write DataFrame to parquet file")

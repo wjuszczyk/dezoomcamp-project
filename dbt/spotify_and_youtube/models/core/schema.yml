@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: facts_sandy
+    description: >
+      All info about songs

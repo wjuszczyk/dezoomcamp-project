@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dtc-spotifyandyoutube
+    schema: sandy_staging
+
+    tables:
+      - name: ingested
+models:
+    - name: sandy_data
+      description: >
+        Dataset of songs of various artist in the world and for each song is present:
+        Several statistics of the music version on spotify, including the number of streams;
+        Number of views of the official music video of the song on youtube.
+      columns:
+          - name: id
+            description: Primary key for this table, generated with a concatenation of artist+track
+            tests:
+                - unique:
+                    severity: warn
+                - not_null:
+                    severity: warn
+          - name: Artist
+            description: Name of the artist.
+          - name: Track
+            description: name of the song, as visible on the Spotify platform.
+          - name: Album
+            description: the album in wich the song is contained on Spotify.
+          - name: Album_type
+            description: indicates if the song is relesead on Spotify as a single or contained in an album.
+          - name: Danceability
+            description: The elapsed trip distance in miles reported by the taximeter.
+          - name: Acousticness
+            description: a confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
+          - name: Tempo
+            description: >
+              the overall estimated tempo of a track in beats per minute (BPM).
+              In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
+          - name: Views
+            description: number of views.
+          - name: Likes
+            description: number of likes.
+          - name: Comments
+            description: number of comments.
+          - name: Stream
+            description: number of streams of the song on Spotify.
+          - name: dur_min
+            description: the duration of the track in minutes.

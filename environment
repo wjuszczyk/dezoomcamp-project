@@ -2,12 +2,14 @@ KAGGLE_CONFIG_DIR=$(pwd)
 PROJECT_ID="dtc-spotifyandyoutube"
 GCP_BUCKET="block-finalproject"
 GCP_CREDENTIALS="credentials-finalproject"
-GOOGLE_APPLICATION_CREDENTIALS="/c/Users/wj/Downloads/dtc-spotifyandyoutube-3c5ee122c700.json"
+GCP_TABLE="sandy_staging"
+GOOGLE_APPLICATION_CREDENTIALS="..."
 
 for i in 	KAGGLE_CONFIG_DIR \
 			PROJECT_ID \
 			GCP_BUCKET \
 			GCP_CREDENTIALS \
+			GCP_TABLE \
 			GOOGLE_APPLICATION_CREDENTIALS
 	do
 		export $i
