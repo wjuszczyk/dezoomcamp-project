@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="30%" src="http://storage.googleapis.com/kaggle-datasets-images/3025170/5201847/a6f88fcaa0cef264f41bb96d1cb05b58/dataset-cover.png?t=2023-03-20-16-35-48"/>
-</p>
+![dataset-cover.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dataset-cover.png)
 
 # Data Engineering ZoomCamp 2023 Course Project - Spotify and Youtube dataset analysis / SandY 
 
@@ -84,9 +82,7 @@ $ pip install -r
 
 1. Create new project on [Google Cloud Platform](https://console.cloud.google.com/projectcreate) and **remember the project's name**, it will be needed later. 
 
-<p align="center">
 ![gcp_project_setup.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-project-setup.PNG)
-</p>
 
 - Edit ```environment``` file and set *PROJECT_ID* parameter with the project's name.
 
@@ -98,9 +94,7 @@ PROJECT_ID="sandy-dtc-project"
 2. Create a Service Account:
     - Go to **IAM & Admin > Service accounts > Create service account** and create it
 
-<p align="center">
 ![gcp-iam1.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-iam1.PNG)
-</p>
 
 - Provide a service account name and grant the roles: **Viewer**, **BigQuery Admin**, **Storage Admin**, **Storage Object Admin**
 
