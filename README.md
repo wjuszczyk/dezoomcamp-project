@@ -99,7 +99,7 @@ PROJECT_ID="sandy-dtc-project"
     - Go to **IAM & Admin > Service accounts > Create service account** and create it
 
 <p align="center">
-<img width="80%" src="images/gcp-iam1.png"/>
+<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam1.PNG"/>
 </p>
 
 - Provide a service account name and grant the roles: **Viewer**, **BigQuery Admin**, **Storage Admin**, **Storage Object Admin**
