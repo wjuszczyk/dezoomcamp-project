@@ -84,7 +84,7 @@ $ pip install -r
 
 1. Create new project on [Google Cloud Platform](https://console.cloud.google.com/projectcreate) and **remember the project's name**, it will be needed later. 
 
-![gcp_project_setup](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-project-setup.png)
+![](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-project-setup.PNG)
 
 - Edit ```environment``` file and set *PROJECT_ID* parameter with the project's name.
 
