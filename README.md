@@ -84,7 +84,7 @@ $ pip install -r
 
 1. Create new project on [Google Cloud Platform](https://console.cloud.google.com/projectcreate) and **remember the project's name**, it will be needed later. 
 
-![](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-project-setup.PNG)
+!(https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-project-setup.PNG)
 
 - Edit ```environment``` file and set *PROJECT_ID* parameter with the project's name.
 
@@ -97,7 +97,7 @@ PROJECT_ID="sandy-dtc-project"
     - Go to **IAM & Admin > Service accounts > Create service account** and create it
 
 <p align="center">
-<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam1.PNG"/>
+!(https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-iam1.PNG)
 </p>
 
 - Provide a service account name and grant the roles: **Viewer**, **BigQuery Admin**, **Storage Admin**, **Storage Object Admin**
