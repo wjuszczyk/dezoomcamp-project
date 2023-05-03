@@ -38,6 +38,7 @@ Dataset of songs of various artist in the world and for each song is present:
 It includes 26 variables for each of the songs collected from Spotify but for this project only below ones were chosen:
 
 <div align="center">
+
 |#|Attribute|Description|
 |:-:|:-:|-|
 |1|id|Unique identifier of the record.|
@@ -53,6 +54,7 @@ It includes 26 variables for each of the songs collected from Spotify but for th
 |11|comments|number of comments on YouTube.|
 |12|stream|number of streams of the song on Spotify.|
 |13|dur_min|the duration of the track in minutes (generated)|
+
 </div>
 
 More information about this dataset is available on [Kaggle](https://www.kaggle.com/datasets/salvatorerastelli/spotify-and-youtube)
