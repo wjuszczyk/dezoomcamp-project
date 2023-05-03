@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="30%" src="https://storage.googleapis.com/kaggle-datasets-images/3025170/5201847/a6f88fcaa0cef264f41bb96d1cb05b58/dataset-cover.png?t=2023-03-20-16-35-48"/>
+  <img width="30%" src="http://storage.googleapis.com/kaggle-datasets-images/3025170/5201847/a6f88fcaa0cef264f41bb96d1cb05b58/dataset-cover.png?t=2023-03-20-16-35-48"/>
 </p>
 
 # Data Engineering ZoomCamp 2023 Course Project - Spotify and Youtube dataset analysis / SandY 
@@ -105,13 +105,13 @@ PROJECT_ID="sandy-dtc-project"
 - Provide a service account name and grant the roles: **Viewer**, **BigQuery Admin**, **Storage Admin**, **Storage Object Admin**
 
 <p align="center">
-<img width="80%" src="images/gcp-iam2.png"/>
+<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam2.png"/>
 </p>
 
 - Create and download the Service Account key file (json format)
 
 <p align="center">
-<img width="80%" src="images/gcp-iam3.png"/>
+<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam3.png"/>
 </p>
 
 3. Edit ```environment``` file and set *GOOGLE_APPLICATION_CREDENTIALS* to point to location where downloaded json file exists.
