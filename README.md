@@ -76,7 +76,7 @@ $ cd datazoomcamp-project
 ```
 3. Install rest of requirements
 ```bash
-$ pip install -r 
+$ pip install -r requirements.txt
 ```
 ### Step 2: Setup GCP
 
