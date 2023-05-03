@@ -1,6 +1,6 @@
 variable "project" {
   description = "Your GCP Project ID"
-  default = "dtc-spotifyandyoutube"
+  default = "dtc-sandy"
   type= string
 }
 
