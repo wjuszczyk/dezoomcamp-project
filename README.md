@@ -98,15 +98,11 @@ PROJECT_ID="sandy-dtc-project"
 
 - Provide a service account name and grant the roles: **Viewer**, **BigQuery Admin**, **Storage Admin**, **Storage Object Admin**
 
-<p align="center">
-<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam2.png"/>
-</p>
+![gcp-iam2.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-iam2.png)
 
 - Create and download the Service Account key file (json format)
 
-<p align="center">
-<img width="80%" src="https://github.com/wjuszczyk/dezoomcamp-project/blob/a6503a15bde26e347e92f96607f6b9b2960232f4/images/gcp-iam3.png"/>
-</p>
+![gcp-iam3.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/gcp-iam3.png)
 
 3. Edit ```environment``` file and set *GOOGLE_APPLICATION_CREDENTIALS* to point to location where downloaded json file exists.
 
