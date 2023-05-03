@@ -15,7 +15,7 @@ Problem: Dataset contains information of artists, their tracks, albums and types
 
 - Which ones are most popular on both platforms?
 - Which album types are most popular?
-- What is the division between types of albums for all artists or per one selected?
+- What is the distribution of types of albums for all artists or per one selected?
 
 ## Technologies used:
 &emsp;Infrastructure as Code: [Terraform](https://www.terraform.io)      
@@ -27,7 +27,7 @@ Problem: Dataset contains information of artists, their tracks, albums and types
 
 ## Architecture Diagram
 
-tbd
+![architecture.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/architecture.png)
 
 ## Dataset description
 
@@ -57,7 +57,13 @@ It includes 26 variables for each of the songs collected from Spotify but for th
 
 </div>
 
+- Dataset on GCP is partioned by Album Type and clustered by Artist. 
+
 More information about this dataset is available on [Kaggle](https://www.kaggle.com/datasets/salvatorerastelli/spotify-and-youtube)
+
+### dbt diagram
+
+![dbt.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dbt.png)
 
 ## Data visualization: Dashboards
 
