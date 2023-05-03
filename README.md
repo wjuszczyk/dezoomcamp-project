@@ -85,8 +85,8 @@ $ pip install -r
 1. Create new project on [Google Cloud Platform](https://console.cloud.google.com/projectcreate) and **remember the project's name**, it will be needed later. 
 
 <p align="center">
-<img width="80%" src="images/gcp-project-setup.png"/>
-</p>
+[[images/gcp-project-setup.png]]
+</p>]]
 
 - Edit ```environment``` file and set *PROJECT_ID* parameter with the project's name.
 
