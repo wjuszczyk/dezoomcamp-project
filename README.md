@@ -4,7 +4,18 @@
 
 ## Preface
 
-tbd
+This repository contains the course project for the Data Engineering Zoomcamp (Cohort 2023) organized by the by [DataTalks.Club](https://datatalks.club/) community.
+The project covers main data engineering skills taught in the course: 
+- Workflow Orchestration: Data Lake, Prefect tool, ETL with GCP & Prefect
+- Data Warehouse: BigQuery
+- Analytics engineering: dbt (data build tool)
+- Data Analysis: Looker Studio
+
+Problem: Dataset contains information of artists, their tracks, albums and types of albums (album, single, compilation) taken from YouTube and Spotify sources. 
+
+- Which ones are most popular on both platforms?
+- Which album types are most popular?
+- What is the division between types of albums for all artists or per one selected?
 
 ## Technologies used:
 &emsp;Infrastructure as Code: [Terraform](https://www.terraform.io)      
@@ -27,7 +38,6 @@ Dataset of songs of various artist in the world and for each song is present:
 It includes 26 variables for each of the songs collected from Spotify but for this project only below ones were chosen:
 
 <div align="center">
-
 |#|Attribute|Description|
 |:-:|:-:|-|
 |1|id|Unique identifier of the record.|
@@ -43,14 +53,25 @@ It includes 26 variables for each of the songs collected from Spotify but for th
 |11|comments|number of comments on YouTube.|
 |12|stream|number of streams of the song on Spotify.|
 |13|dur_min|the duration of the track in minutes (generated)|
-
 </div>
 
 More information about this dataset is available on [Kaggle](https://www.kaggle.com/datasets/salvatorerastelli/spotify-and-youtube)
 
 ## Data visualization: Dashboards
 
-tbd
+Sample dashboard is available under [this link](https://lookerstudio.google.com/reporting/953e7a46-24d1-42c1-82c7-3461f5b10fd0)
+
+All artists:
+
+![dashboard1](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dashboard1.PNG)
+
+Selected artist:
+
+![dashboard2](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dashboard2.PNG)
+
+Selected artist and album type:
+
+![dashboard3](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dashboard3.PNG)
 
 ## How to reproduce this Project
 
@@ -294,3 +315,5 @@ $ grep location ~/.dbt/profiles.yml
 $ grep location ~/.dbt/profiles.yml
       location: europe-central2
 ```
+
+### Step 7: Go to Looker Studio and create dashboard matching your questions.
