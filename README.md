@@ -2,6 +2,20 @@
 
 # Data Engineering ZoomCamp 2023 Course Project - Spotify and Youtube dataset analysis / SandY 
 
+1. [Preface](#preface)
+2. [Technologies used](#technologies-used)
+3. [Architecture Diagram](#architecture-diagram)
+4. [Dataset description](#dataset-description)
+5. [Data visualization: Dashboards](#data-visualization-dashboards)
+6. [How to reproduce this Project](#how-to-reproduce-this-project)
+  - [Requirements](#requirements)
+  - [Step 1: Setup local Conda environment](#step-1-setup-local-conda-environment)
+  - [Step 2: Setup GCP](#step-2-setup-gcp)
+  - [Step 3: Setup terraform](#step-3-setup-terraform)
+  - [Step 4: Kaggle setup](#step-4-kaggle-setup)
+  - [Step 5: Prefect setup](#step-5-prefect-setup)
+  - [Step 6: DBT setup](#step-6-dbt-setup)
+
 ## Preface
 
 This repository contains the course project for the Data Engineering Zoomcamp (Cohort 2023) organized by the by [DataTalks.Club](https://datatalks.club/) community.
@@ -323,5 +337,3 @@ $ grep location ~/.dbt/profiles.yml
 $ grep location ~/.dbt/profiles.yml
       location: europe-central2
 ```
-
-### Step 7: Go to Looker Studio and create dashboard matching your questions.
