@@ -99,7 +99,7 @@ Selected artist and album type:
 
 ### Requirements
 
-&emsp;1. [Pandas](https://pandas.pydata.org/)<br>
+&emsp;1. [Anaconda](https://www.anaconda.com/)<br>
 &emsp;2. [Git](https://git-scm.com/)<br>
 &emsp;3. [Kaggle](https://www.kaggle.com/) free account<br>
 &emsp;4. [Google Cloud Platform]() account<br>
